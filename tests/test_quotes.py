@@ -30,6 +30,8 @@ class QuotesTest(unittest.TestCase):
         query_by_lang["he"] = "ברק אובמה"
         # Special case: The basque wikiquote doesn't have a page for Barack Obama
         query_by_lang["eu"] = "Simón Bolívar"
+        query_by_lang["tr"] = "Barış"
+
 
         for lang in wikiquote.supported_languages():
             quotes = wikiquote.quotes(query_by_lang[lang], lang=lang)

@@ -58,6 +58,7 @@ The `wikiquote` module currently supports the following languages:
 | Polish     | `pl`           |
 | Portuguese | `pt`           |
 | Spanish    | `es`           |
+| Turkish    | `tr`           |
 
 Use the `lang` parameter to specify the language (defaults to `en`):
 ```python

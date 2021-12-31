@@ -17,5 +17,8 @@ def qotd(html_tree: lxml.html.HtmlElement) -> Tuple[Text, Text]:
     qotd_components = qotd_element.xpath("center/center/table/tbody/tr")
 
     quote = qotd_components[0].text_content().strip()
+    # how can I correctly strip newlines and quotes?
+    quote = quote.replace('“', '').replace('„', '').replace('\n', '')
+
     author = qotd_components[1].text_content().strip()
     return quote, author
